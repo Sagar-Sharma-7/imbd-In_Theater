@@ -59,14 +59,12 @@ header{
             line-height: 15vh;
         }
         .date_time{
-            border-top: 1px solid #1e1e1e;
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0 2vh 0 2vh;
             height: 8vh;
-            border-bottom: 1px solid #1e1e1e;
             font-size: 1.3rem;
             #year{
                 background-color: #F9BC50;
@@ -92,6 +90,26 @@ header{
             font-size: 1.4rem;
             border-bottom: 2px solid #F9BC50;
         }
-        
+        .btn_gp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 1vh;
+            margin-top: 1vh;
+            button{
+                width: 10vw;
+                padding: 1vh 0 ;
+                margin: 0 0.5vw;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                background-color: #1e1e1e;
+                color: #F9BC50;
+                cursor: pointer;
+                &:active{
+                    background-color: #F9BC50;
+                }
+            }
+        }
     }
 }

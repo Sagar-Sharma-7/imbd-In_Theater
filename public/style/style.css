@@ -77,7 +77,6 @@ header button:hover {
 }
 
 .container .right .date_time {
-  border-top: 1px solid #1e1e1e;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,7 +89,6 @@ header button:hover {
           align-items: center;
   padding: 0 2vh 0 2vh;
   height: 8vh;
-  border-bottom: 1px solid #1e1e1e;
   font-size: 1.3rem;
 }
 
@@ -127,5 +125,35 @@ header button:hover {
   padding: 2vh 2vw;
   font-size: 1.4rem;
   border-bottom: 2px solid #F9BC50;
+}
+
+.container .right .btn_gp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1vh;
+  margin-top: 1vh;
+}
+
+.container .right .btn_gp button {
+  width: 10vw;
+  padding: 1vh 0;
+  margin: 0 0.5vw;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #1e1e1e;
+  color: #F9BC50;
+  cursor: pointer;
+}
+
+.container .right .btn_gp button:active {
+  background-color: #F9BC50;
 }
 /*# sourceMappingURL=style.css.map */
