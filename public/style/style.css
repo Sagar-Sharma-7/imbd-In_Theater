@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Patrick Hand', cursive;
+}
+
+header {
+  height: 12vh;
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1vw;
+  border-bottom: 2px solid #F9BC50;
+  border-top: 2px solid #F9BC50;
+}
+
+header img {
+  height: 12vh;
+}
+
+header button {
+  padding: 2vh 3vw;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: #1e1e1e;
+  color: #fff;
+  border-radius: 10px;
+}
+
+header button:hover {
+  color: #F9BC50;
+}
+
+.container {
+  height: 88vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .left {
+  width: 50vw;
+  height: 100vh;
+}
+
+.container .left img {
+  height: 100vh;
+  width: 50vw;
+}
+
+.container .right {
+  height: 100vh;
+  width: 50vw;
+}
+
+.container .right .title {
+  font-size: 6rem;
+  width: 42vw;
+  padding: 2vh 0 1vh 2vw;
+  line-height: 15vh;
+}
+
+.container .right .date_time {
+  border-top: 1px solid #1e1e1e;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2vh 0 2vh;
+  height: 8vh;
+  border-bottom: 1px solid #1e1e1e;
+  font-size: 1.3rem;
+}
+
+.container .right .date_time #year {
+  background-color: #F9BC50;
+  padding: 1vh 1vw;
+  color: #fff;
+  border: 1px solid #ffae21;
+  border-radius: 10px;
+}
+
+.container .right .more {
+  margin: 1vh 0;
+  border-bottom: 1px solid #1e1e1e;
+  border-top: 1px solid #1e1e1e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1vh 0;
+  font-size: 1.3rem;
+}
+
+.container .right .movie_info {
+  padding: 2vh 2vw;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #F9BC50;
+}
+/*# sourceMappingURL=style.css.map */

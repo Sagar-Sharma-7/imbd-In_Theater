@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+}
+
+
+header{
+    height: 12vh;
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw;
+    border-bottom: 2px solid #F9BC50;
+    border-top: 2px solid #F9BC50;
+    img{
+        height: 12vh;
+    }
+    button{
+        padding: 2vh 3vw;
+        border: none;
+        outline: none;
+        font-size: 1.1rem;
+        cursor: pointer;
+        background-color: #1e1e1e;
+        color:#fff ; 
+        border-radius: 10px;
+        &:hover{
+            color: #F9BC50;
+        }
+    }
+}
+
+// content
+.container{
+    height: 88vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    .left{
+        width: 50vw;
+        height: 100vh;
+        img{
+            height: 100vh;
+            width: 50vw;
+        }
+    }
+    .right{
+        height: 100vh;
+        width: 50vw;
+        .title{
+            font-size: 6rem;
+            width: 42vw;
+            padding: 2vh 0 1vh 2vw;
+            line-height: 15vh;
+        }
+        .date_time{
+            border-top: 1px solid #1e1e1e;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2vh 0 2vh;
+            height: 8vh;
+            border-bottom: 1px solid #1e1e1e;
+            font-size: 1.3rem;
+            #year{
+                background-color: #F9BC50;
+                padding: 1vh 1vw;
+                color: #fff;
+                border: 1px solid #ffae21;
+                border-radius: 10px;
+            }
+        }
+        .more{
+            margin: 1vh 0;
+            border-bottom: 1px solid #1e1e1e;
+            border-top: 1px solid #1e1e1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1vh 0;
+            font-size: 1.3rem;
+        }
+        .movie_info{
+            padding: 2vh 2vw;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #F9BC50;
+        }
+        
+    }
+}
