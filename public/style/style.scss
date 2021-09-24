@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+$dyellow: #F9BC50;
+$bk: #1e1e1e;
 
 *{
     margin: 0;
@@ -15,8 +17,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 1vw;
-    border-bottom: 2px solid #F9BC50;
-    border-top: 2px solid #F9BC50;
+    border-bottom: 2px solid $dyellow;
+    border-top: 2px solid $dyellow;
     img{
         height: 12vh;
     }
@@ -26,11 +28,11 @@ header{
         outline: none;
         font-size: 1.1rem;
         cursor: pointer;
-        background-color: #1e1e1e;
+        background-color: $bk;
         color:#fff ; 
         border-radius: 10px;
         &:hover{
-            color: #F9BC50;
+            color: $dyellow;
         }
     }
 }
@@ -67,17 +69,17 @@ header{
             height: 8vh;
             font-size: 1.3rem;
             #year{
-                background-color: #F9BC50;
+                background-color: $dyellow;
                 padding: 1vh 1vw;
                 color: #fff;
-                border: 1px solid #ffae21;
+                border: 1px solid $dyellow;
                 border-radius: 10px;
             }
         }
         .more{
             margin: 1vh 0;
-            border-bottom: 1px solid #1e1e1e;
-            border-top: 1px solid #1e1e1e;
+            border-bottom: 1px solid $bk;
+            border-top: 1px solid $bk;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -88,7 +90,7 @@ header{
         .movie_info{
             padding: 2vh 2vw;
             font-size: 1.4rem;
-            border-bottom: 2px solid #F9BC50;
+            border-bottom: 2px solid $dyellow;
         }
         .btn_gp{
             display: flex;
@@ -103,11 +105,11 @@ header{
                 border-radius: 10px;
                 border: none;
                 outline: none;
-                background-color: #1e1e1e;
-                color: #F9BC50;
+                background-color: $bk;
+                color: $dyellow;
                 cursor: pointer;
                 &:active{
-                    background-color: #F9BC50;
+                    background-color: $dyellow;
                 }
             }
         }
