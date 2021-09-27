@@ -20,6 +20,7 @@ const getData = async() => {
         time.innerHTML = items[0].runtimeStr;
         year.innerHTML = items[0].year;
         genres.innerHTML = `Genres: ${items[0].genres}`;
+        release.innerHTML = `Release: ${items[0].releaseState}`;
         info.innerHTML = items[0].plot;
 
 
@@ -31,6 +32,7 @@ const getData = async() => {
                 time.innerHTML = items[num].runtimeStr;
                 year.innerHTML = items[num].year;
                 genres.innerHTML = `Genres: ${items[num].genres}`;
+                release.innerHTML = `Release: ${items[num].releaseState}`;
                 info.innerHTML = items[num].plot;
             })
         })
