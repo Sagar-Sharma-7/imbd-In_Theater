@@ -1,0 +1,22 @@
+{
+  "name": "imdb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sagar-Sharma-7/imbd-In_Theater.git"
+  },
+  "author": "Sagar Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sagar-Sharma-7/imbd-In_Theater/issues"
+  },
+  "homepage": "https://github.com/Sagar-Sharma-7/imbd-In_Theater#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
