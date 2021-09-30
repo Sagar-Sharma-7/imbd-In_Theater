@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,11 @@
   font-family: 'Patrick Hand', cursive;
 }
 
-header {
+.header-phone {
+  display: none !important;
+}
+
+.header-lap, .header-phone {
   height: 12vh;
   width: 50vw;
   display: -webkit-box;
@@ -24,11 +29,11 @@ header {
   border-top: 2px solid #F9BC50;
 }
 
-header img {
+.header-lap img, .header-phone img {
   height: 12vh;
 }
 
-header button {
+.header-lap button, .header-phone button {
   padding: 2vh 3vw;
   border: none;
   outline: none;
@@ -39,7 +44,7 @@ header button {
   border-radius: 10px;
 }
 
-header button:hover {
+.header-lap button:hover, .header-phone button:hover {
   color: #F9BC50;
 }
 
@@ -70,10 +75,9 @@ header button:hover {
 }
 
 .container .right .title {
-  font-size: 6rem;
-  width: 42vw;
+  font-size: 4.4rem;
   padding: 2vh 0 1vh 2vw;
-  line-height: 15vh;
+  font-family: 'Nunito', sans-serif;
 }
 
 .container .right .date_time {
@@ -155,5 +159,18 @@ header button:hover {
 
 .container .right .btn_gp button:active {
   background-color: #F9BC50;
+}
+
+@media all and (max-width: 1000px) {
+  .container .right .title {
+    font-size: 3.2rem;
+    width: 50vw;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .header-lap {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

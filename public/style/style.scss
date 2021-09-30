@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap');
 $dyellow: #F9BC50;
 $bk: #1e1e1e;
 
@@ -8,9 +9,12 @@ $bk: #1e1e1e;
     box-sizing: border-box;
     font-family: 'Patrick Hand', cursive;
 }
+.header-phone{
+    display: none !important;
+}
 
 
-header{
+.header-lap, .header-phone{
     height: 12vh;
     width: 50vw;
     display: flex;
@@ -55,10 +59,9 @@ header{
         height: 100vh;
         width: 50vw;
         .title{
-            font-size: 6rem;
-            width: 42vw;
+            font-size: 4.4rem;
             padding: 2vh 0 1vh 2vw;
-            line-height: 15vh;
+            font-family: 'Nunito', sans-serif;
         }
         .date_time{
             width: 100%;
@@ -114,4 +117,23 @@ header{
             }
         }
     }
+}
+
+// responsive
+
+@media all and (max-width:1000px){
+    .container{
+        .right{
+            .title{
+                font-size: 3.2rem;
+                width: 50vw;
+            }
+        }
+    }
+}
+
+@media all and (max-width:750px){
+   .header-lap{
+       display: none;
+   }
 }
