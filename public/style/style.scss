@@ -9,12 +9,9 @@ $bk: #1e1e1e;
     box-sizing: border-box;
     font-family: 'Patrick Hand', cursive;
 }
-.header-phone{
-    display: none !important;
-}
 
 
-.header-lap, .header-phone{
+.header-lap{
     height: 12vh;
     width: 50vw;
     display: flex;
@@ -43,7 +40,7 @@ $bk: #1e1e1e;
 
 // content
 .container{
-    height: 88vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     align-items: flex-start;
@@ -87,7 +84,7 @@ $bk: #1e1e1e;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding: 1vh 0;
+            padding: 1vh 1vw;
             font-size: 1.3rem;
         }
         .movie_info{
@@ -136,4 +133,19 @@ $bk: #1e1e1e;
    .header-lap{
        display: none;
    }
+   .container{
+       flex-direction: column;
+       .left, .right{
+           width: 100vw;
+       }
+       .left{
+           img{
+               width: 100vw;
+           }
+
+       }
+       }
+       .more{
+           font-size: 1rem;
+       }
 }
