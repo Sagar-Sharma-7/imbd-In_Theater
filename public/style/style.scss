@@ -129,7 +129,7 @@ $bk: #1e1e1e;
     }
 }
 
-@media all and (max-width:750px){
+@media all and (max-width:800px){
    .header-lap{
        display: none;
    }
@@ -137,10 +137,12 @@ $bk: #1e1e1e;
        flex-direction: column;
        .left, .right{
            width: 100vw;
+           height: auto;
        }
        .left{
            img{
                width: 100vw;
+               height: 100vw;
            }
 
        }

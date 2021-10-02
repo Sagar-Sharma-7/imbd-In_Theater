@@ -164,7 +164,7 @@
   }
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 800px) {
   .header-lap {
     display: none;
   }
@@ -176,9 +176,11 @@
   }
   .container .left, .container .right {
     width: 100vw;
+    height: auto;
   }
   .container .left img {
     width: 100vw;
+    height: 100vw;
   }
   .more {
     font-size: 1rem;
