@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap');
 $dyellow: #F9BC50;
 $bk: #1e1e1e;
+@mixin flex($jus: center, $alg: center){
+    display: flex;
+    justify-content: $jus;
+    align-items: $alg;
+}
 
 *{
     margin: 0;
@@ -14,9 +19,7 @@ $bk: #1e1e1e;
 .header-lap{
     height: 12vh;
     width: 50vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(space-between);
     padding: 0 1vw;
     border-bottom: 2px solid $dyellow;
     border-top: 2px solid $dyellow;
@@ -42,8 +45,7 @@ $bk: #1e1e1e;
 .container{
     height: 100vh;
     width: 100vw;
-    display: flex;
-    align-items: flex-start;
+    @include flex(none, flex-start);
     .left{
         width: 50vw;
         height: 100vh;
@@ -62,9 +64,7 @@ $bk: #1e1e1e;
         }
         .date_time{
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flex(space-between);
             padding: 0 2vh 0 2vh;
             height: 8vh;
             font-size: 1.3rem;
@@ -80,9 +80,7 @@ $bk: #1e1e1e;
             margin: 1vh 0;
             border-bottom: 1px solid $bk;
             border-top: 1px solid $bk;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex;
             flex-direction: column;
             padding: 1vh 1vw;
             font-size: 1.3rem;
@@ -93,9 +91,7 @@ $bk: #1e1e1e;
             border-bottom: 2px solid $dyellow;
         }
         .btn_gp{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex;
             padding-top: 1vh;
             margin-top: 1vh;
             button{

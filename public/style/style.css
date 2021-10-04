@@ -50,6 +50,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
